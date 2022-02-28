@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Google+Sans&display=swap');
+
+body {
+    font-family: 'Google Sans', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background:white;
+  }
+  
+  .cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    top: 30;
+    left: 0;
+    width: 100vw;
+    height: 80vh;
+  }
+  
+  .title {
+    font-size: 3vw;
+    color: rgb(0, 0, 0);
+    width: 40%;
+    text-align:center;
+  }
+
+  canvas {
+    width: 100%;
+  }

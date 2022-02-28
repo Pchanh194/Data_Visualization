@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta Tags -->
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!-- Stylesheet, should cut off to one stylesheet only -->
+		<link rel="stylesheet" href="styles/style.css"/>
+		<!-- Social MEdia icon-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<meta name="description" content="Looking to work at TechTent? Browse open positions across departments and learn more about the benefits that come with a job on our team."/>
+		<meta name="keywords" content="HTML5, TechTent"/>
+		<meta name="author" content="Hoang Chau Anh Pham"/>
+		<script src="scripts/apply.js"> </script>
+		<!-- <script src="job.js"> </script> -->
+		<!-- <script src="message.js"> </script> -->
+		<title>TechTent Careers - TechTent</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-color-grey">
+				<div class="container">
+					<a class="navbar-brand" href="#">
+						<span class="text-yl">Tech</span>Tent</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupport">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about.html">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="jobs.html">Jobs</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="index.html#PnB">Perks and Benefits</a>
+								<!-- Change href name -->
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="apply.html">Apply</a>
+								<!-- Change href name -->
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="enhancements.html">More</a>
+								<!-- Change href name -->
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="index.html#contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<!-- .navbar-collapse -->
+				</div>
+				<!-- .container -->
+			</nav>
+		</header>
+		
+		<div class="page-banner-900 overlay-dark bg-image back-apply">
+			<div class="banner-section">
+				<div class="container text-center">
+					<h1 class="display-5 pb-5">EMPLOYEE APPLICATION FORM </h1>
+					<div class="card-apply pt-3 pb-5">
+						<div class="body">
+							<form id="regform" class="main-form" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" novalidate="novalidate">
+								<div class="row mt-5">
+									<p class="font-weight-normal text-yl"> YOUR DETAILS:</p>
+									<div class="col-12 col-sm-6 py-2 inline">
+										<input id="firstname" type="text" name="first name" class="form-control mr" placeholder="First Name" maxlength="20"/>
+										<input id="lastname" type="text" name="last name" class="form-control" placeholder="Last Name" maxlength="20"/>
+									</div>
+									<div class="col-22 inline">
+										<p id="textfname" class="mg-15 red wd-49-none"> </p>
+										<p id="textlname" class="mg-15 red wd-49-none mg-15"> </p>
+									</div>
+									<div class="col-12 col-sm-6 py-2 inline">
+										<input id="dob" name="D.O.B." class="form-control wd-49" type="text" placeholder="Date Of Birth"/>
+										<fieldset class=" inline">
+										<p class="text-gr-2 mt-2"> Gender<span class="red">*</span>
+										</p>
+										<p class="mb-0">
+											<label class="text-gr mt-2">Male <input id="male" name="gender" type="radio" value="male"/>
+											</label>
+											<label class="text-gr mt-2">Female <input id="female" name="gender" type="radio" value="female"/>
+											</label>
+											<label class="text-gr mt-2">Other <input id="other" name="gender" type="radio" value="other"/>
+											</label>
+										</p>
+										</fieldset>
+									</div>
+									<div class="col-22 inline">
+										<p id="textdob" class="mg-15 red wd-49-none"> </p>
+										<p id="textgender" class="mg-15 red wd-49-none mg-15"> </p>
+									</div>
+									<div class="col-12 col-sm-6 py-2 inline">
+										<input id="address" type="text" name="address" class="form-control" placeholder="Street Address" maxlength="40"/>
+									</div>
+									<p id="textaddress" class="mg-15 red"> </p>
+									<div class="col-12 col-sm-6 py-2 inline">
+										<input id="town" type="text" name="suburd" class="form-control" placeholder="Suburd/ Town" maxlength="40"/>
+									</div>
+									<p id="texttown" class="mg-15 red"> </p>
+									<div class="col-12 col-sm-6 py-2 inline">
+										<select name="state" id="state" class="custom-select wd-49-none">
+											<option value="" selected="selected" disabled="disabled">Select State</option>
+											<option value="VIC">VIC</option>
+											<option value="NSW">NSW</option>
+											<option value="QLD">QLD</option>
+											<option value="NT">NT</option>
+											<option value="WA">WA</option>
+											<option value="SA">SA</option>
+											<option value="TAS">TAS</option>
+											<option value="ACT">ACT</option>
+										</select>
+										<input type="text" id="postcode" name="postcode" class="form-control fr" placeholder="Postcode"/><!-- required-->
+									</div>
+									<div class="col-22 inline">
+										<p id="textstate" class="mg-15 red wd-49-none"> </p>
+										<p id="textpost" class="mg-15 red wd-49-none mg-15"> </p>
+									</div>
+									<div class="col-12 col-sm-6 py-2 inline">
+										<input id = "refpos" type="text" name="ref_num" class="form-control" placeholder="Job Referrence Number" pattern="\d{5}"/><!-- required-->
+									</div>
+									<p id="textref" class="mg-15 red"> </p>
+									<div class="col-12 col-sm-6 py-2 inline">
+										<input id="email" type="text" name="email" class="form-control mr" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" /><!-- required-->
+										<input id="phone" type="text" name="phone" class="form-control" placeholder="Phone number" pattern="\d{8,12}"/><!-- required-->
+										<!--8-12 digits, or spaces-->
+									</div>
+									<div class="col-22 inline">
+										<p id="textemail" class="mg-15 red wd-49-none"> </p>
+										<p id="textphone" class="mg-15 red wd-49-none mg-15"> </p>
+									</div>
+									<p class="font-weight-normal text-yl pt-5"> QUALIFICATIONS:</p>
+									<div class="col-12 col-sm-6 py-2 inline">
+										<input id = "university" type="text" name="university" class="form-control wd-50" placeholder="University"/><!-- required-->
+											<select id ="qualify" class="form-control custon-select fr no-ml" id="education" name="education"><!-- required-->
+												<option value="" selected="selected" disabled="disabled">Highest Qualification</option>
+												<option value="No formal education">No Formal Education</option>
+												<option value="Primary education">Primary Education</option>
+												<option value="Secondary education">Secondary Education/ High School Education</option>
+												<option value="GED">General Education</option>
+												<option value="Vocational qualification">Vocational Qualification</option>
+												<option value="Bachelor's degree">Bachelor's Degree</option>
+												<option value="Master's degree">Master's Degree</option>
+												<option value="Doctorate or higher">Doctorate or Higher</option>
+											</select>
+									</div>
+									<div class="col-22 inline">
+										<p id="textuni" class="mg-15 red wd-49-none"> </p>
+										<p id="textquali" class="mg-15 red wd-49-none mg-15"> </p>
+									</div>
+									<p class="font-weight-normal text-yl pt-5 mb-0"> SKILLS:</p>
+									<div class="col-12 col-sm-6 py-2">
+										<p class="text-yl-bd pt-3 text-align-lf"> Technical Skills: <span class="red">*</span></p>
+										<p class="text-align-lf">
+											<label class="text-gr" for="tech">
+												<input type="checkbox" name="techskill[]" value="techwri" id="techwri"/> Technical writing </label>
+											<label class="text-gr">
+												<input type="checkbox" name="techskill[]" value="media" id="media"/> Social media management</label>
+											<label class="text-gr">
+												<input type="checkbox" name="techskill[]" value="coding" id="coding"/> Coding</label>
+											<label class="text-gr">
+												<input type="checkbox" name="techskill[]" value="network" id="network"/> Network configuration</label>
+											<label class="text-gr">
+												<input type="checkbox" name="techskill[]" value="hardware" id="hardware"/> Hardware deployment</label>
+											<label class="text-gr">
+												<input type="checkbox" name="techskill[]" value="operating" id="operating"/> Operating system knowledge</label>
+											<label class="text-gr">
+												<input type="checkbox" name="techskill[]" value="database" id="database"/> Database management</label>
+										</p>
+										<p class="text-yl-bd pt-3 text-align-lf"> Soft Skills: <span class="red">*</span></p>
+										<p class="text-align-lf">
+											<label class="text-gr">
+												<input type="checkbox" name="softskill[]" value="commun" id="commun"/> Communication</label>
+											<label class="text-gr">
+												<input type="checkbox" name="softskill[]" value="analytic" id="analytic"/> Analytical abilities</label>
+											<label class="text-gr">
+												<input type="checkbox" name="softskill[]" value="creative"  id="creative"/> Creativity</label>
+											<label class="text-gr">
+												<input type="checkbox" name="softskill[]" value="management" id="management"/> Project management</label>
+											<label class="text-gr">
+												<input type="checkbox" name="softskill[]" value="tenacity" id="tenacity"/> Tenacity</label>
+											<label class="text-gr">
+												<input type="checkbox" name="softskill[]" value="solving" id="solving"/> Problem-solving</label>
+											<label class="text-gr">
+												<input type="checkbox" name="softskill[]" value="resource" id="resource"/> Resourcefulness</label>
+											<label class="text-gr">
+												<input type="checkbox" name="softskill[]" value="leader" id="leader"/> Leadership</label>
+											<label class="text-gr">
+												<input type="checkbox" name="softskill[]" value="flexible" id="flexible"/> Flexibity</label>
+										</p>
+										<p class="text-yl-bd pt-3 text-align-lf"> Other Skills: </p>
+										<textarea id="textarea" name="otherskill" id="otherskill" class="form-control" rows="6" placeholder="Enter Here"></textarea>
+									</div>
+									<p id="textother" class="mg-15 red"> </p>
+								</div>
+								<button type="submit" class="btn btn-primary mt-3" id="submit-button">SUBMIT APPLICATION</button>
+								<p id="textedit" class="mg-15 red"> </p>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- .container -->
+			</div>
+			<!-- .banner-section -->
+		</div>
+		<footer class="page-footer">
+			<div class="container">
+				<div class="row px-md-3">
+					<div class="col-sm-6 col-lg-3 py-3">
+						<h5>Company</h5>
+						<ul class="footer-menu">
+							<li>
+								<a href="about.html">About</a>
+							</li>
+							<li>
+								<a href="jobs.html">Jobs</a>
+							</li>
+							<li>
+								<a href="#">Our Team</a>
+							</li>
+							<li>
+								<a href="#">Our Partners</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-lg-3 py-3">
+						<h5>More</h5>
+						<ul class="footer-menu">
+							<li>
+								<a href="#">Terms & Condition</a>
+							</li>
+							<li>
+								<a href="#">Privacy</a>
+							</li>
+							<li>
+								<a href="#">Advertise</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-lg-3 py-3">
+						<h5>Contact</h5>
+						<p class="footer-link mt-2">123 Example Street, Sydney, Australia.</p>
+						<a href="maito:103533839@student.swin.edu.au" class="footer-link">TechTent-services@example.com</a>
+					</div>
+					<div class="col-sm-6 col-lg-3 py-3">
+						<h5 id="socialmedia">Social Media</h5>
+						<ul class="footer-sc-mdia">
+							<li>
+								<a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"> </a>
+							</li>
+							<li>
+								<a href="https://twitter.com/" target="_blank" class="fa fa-twitter"> </a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"> </a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"> </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<hr/>
+				<p id="copyright">Copyright &copy; 2021. All right reserved</p>
+			</div>
+		</footer>
+	</body>
+</html>
