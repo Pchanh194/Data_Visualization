@@ -1,0 +1,124 @@
+/*filename: style
+author: Hoang Chau Anh Pham, Trung Kien Nguyen
+created: 23082021
+last modified: 29082021
+description: style the websites*/
+
+
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css?family=Google+Sans&display=swap');
+
+html {
+    font-family: "Google Sans", Candara, San Francisco, Helvetica, Helvetica Neue, Lato, Roboto, Arial, sans-serif;
+    line-height: 1.15;
+  }
+  
+  article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Google Sans", Candara, San Francisco, Helvetica, Helvetica Neue, Lato, Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+  }
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+.border-both {
+  box-sizing: content-box;
+  margin: 5rem;
+  border: 5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.big-heading {
+  color: #575854;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+  width: auto;
+  max-width: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+.page-section {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0 !important;
+}
+.margin-top-0 {
+  padding-top: 0 !important;
+}
+
+.padding-top-5 {
+  padding-top: 5rem !important;
+}
+
+.container {
+  min-width: 992px;
+}
+
+.align-center {
+  align-items: center !important;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.col-15, .col-sm-6 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.padding-top-1 {
+  padding-top: 1rem !important;
+}
+
+.img-align {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.page-footer {
+  position: relative;
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #2D3B38;
+  color: #fff;
+}
