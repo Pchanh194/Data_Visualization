@@ -18,7 +18,7 @@ function init(){
 
     button2021.addEventListener("click",()=>{
         const image = document.getElementById("image");
-        image.src= "./image/chart2020.png";
+        image.src= "./image/chart2021.png";
         const caption=document.getElementById("caption");
         caption.innerHTML= "Percentage of popular pet in 2021"
         
