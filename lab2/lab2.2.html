@@ -30,8 +30,8 @@
                 return h - d - 20;
             })
             .attr("width", 20)
-            .attr("height", function(d, i){
-                return dataset[i] + 20;
+            .attr("height", function(d){
+                return d + 20;
             })
             .attr("fill", "darkslateblue");
         svg.selectAll("text")
