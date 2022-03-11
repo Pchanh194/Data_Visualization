@@ -5,6 +5,7 @@ function init(){
     const button2019 = document.getElementById("button1");
     const button2021 = document.getElementById("button2");
     const buttonboth = document.getElementById("button3");
+    //create button for each year
     
 
     button2019.addEventListener("click",()=>{
