@@ -12,7 +12,7 @@ function init(){
         const image = document.getElementById("image");
         image.src= "./image/chart2019.png";
        
-
+    //add graphs
         const caption=document.getElementById("caption");
         caption.innerHTML= "Percentage of popular pet in 2019"
     });
@@ -20,6 +20,7 @@ function init(){
     button2021.addEventListener("click",()=>{
         const image = document.getElementById("image");
         image.src= "./image/chart2021.png";
+        //add graphs
         const caption=document.getElementById("caption");
         caption.innerHTML= "Percentage of popular pet in 2021"
         
@@ -27,6 +28,7 @@ function init(){
 
     buttonboth.addEventListener("click",()=>{
         const image = document.getElementById("image");
+        //add graphs
         image.src= "./image/bothyearchart.png";
         const caption=document.getElementById("caption");
         caption.innerHTML= "Percentage of popular pet in 2019 and 2021"
