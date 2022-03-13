@@ -33,19 +33,19 @@
                                 [85, 21],  
                                 [220, 88] 
                              ]; 
-
+                //create a dataset
 
                              var svg = d3.select("body")
                                         .append("svg")
                                         .attr("width", w)
                                         .attr("height", h);
-
+                //append svg to body
                                 svg.selectAll("circle")
                                 .data(dataset)
                                 .enter()
                                 .append("circle")
                                 .attr("cx", function(d, i){
-                                    return d[0];
+                                    return d[0];        //append circle using the positions given
                                 })
                                 .attr("cy", function(d,i){
                                     return d[1];
@@ -58,13 +58,13 @@
                                 .enter()
                                 .append("text")
                                   .attr("x", function(d, i){
-                                    return d[0]+10;
+                                    return d[0]+10;    //change the text position away from the circle
                                 })
                                 .attr("y", function(d,i){
-                                    return d[1]-2;
+                                    return d[1]-2;    //change the text position away from the circle
                                 })
                                 .text(function(d){
-                                    return  d[0]+ "," +d[1];
+                                    return  d[0]+ "," +d[1];    // print the positions of each circle
                                 });
                               
             </script>
