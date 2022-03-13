@@ -51,8 +51,18 @@
                                     return d[1];
                                 })
                                 .attr("r", 5)
-                                .attr("fill", "slategrey");
+                                .attr("fill", function(d,i){
+                                    if (i==6)
+                                    {
+                                        return "red";
+                                    }
 
+                                    else
+                                    {
+                                        return "darkslateblue";
+                                    }
+
+                                });
                                 svg.selectAll("text")
                                 .data(dataset)
                                 .enter()
