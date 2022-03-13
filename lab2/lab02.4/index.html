@@ -46,7 +46,7 @@
                     }
 
                     else{
-                        return "blue";
+                        return "blue"; //change colors depend on the position of the bars
                     }
                 });
 
@@ -74,10 +74,10 @@
          d3.csv("./csv/data.csv").then(function(data) {
         var wombatSightings = data;
         Barchart(wombatSightings);
-        
+        //draw graph
         })
     
-      
+      //reading csv files from the folder
         
 
 
