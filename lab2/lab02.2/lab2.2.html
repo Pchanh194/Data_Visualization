@@ -19,6 +19,9 @@
             .append("svg")
             .attr("width", w)
             .attr("height", h);
+        
+        
+        // append svg to body
         svg.selectAll("rect")
             .data(dataset)
             .enter()
@@ -32,6 +35,7 @@
             .attr("width", 20)
             .attr("height", function(d){
                 return d + 20;
+            //height setting
             })
             .attr("fill", "darkslateblue");
         svg.selectAll("text")
@@ -39,7 +43,8 @@
             .enter()
             .append("text")
             .attr("x", function(d, i){
-                return 4 + i * 21 + 42 * Math.floor(i/2);
+                return 4 + i * 21 + 42 * Math.floor(i/2);  
+                //change the positions of the text
             })
             .attr("y", function(d){
                 return h - d;
