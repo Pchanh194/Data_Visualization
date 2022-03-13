@@ -38,7 +38,18 @@
                 .attr("height", function(d, i){
                     return d.wombats + 20;
                 })
-                .attr("fill", "darkslateblue");
+                  .attr("fill", function(i,d){
+        
+                    if (d%2==0)
+                    {
+                        return "green";
+                    }
+
+                    else{
+                        return "blue";
+                    }
+                });
+
 
 
                 svg.selectAll("text")
